@@ -1,0 +1,8 @@
+{
+  "short_name": "react-firebase-web",
+  "name": "react-firebase-web",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

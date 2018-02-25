@@ -1,0 +1,9 @@
+.header__right {
+  right: 0;
+  position: absolute;
+  padding: 0 24px 0 24px;
+}
+
+.header__icons {
+  margin-left: 48px;
+}
