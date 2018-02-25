@@ -1,14 +1,12 @@
-import Deslogada from '../components/pages/Deslogada'
-import LogadaUm from '../components/pages/LogadaUm'
-import LogadaDois from '../components/pages/LogadaDois'
+import Lista from '../components/pages/Lista'
+import Cadastro from '../components/pages/Cadastro'
 
 const publicRoutes = [
-  { link: '/deslogada', name: 'Deslogada', component: Deslogada },
+  { link: '/lista', name: 'Lista', component: Lista },
 ]
 
 const privateRoutes = [
-  { link: '/logada-1', name: 'Logada Um', component: LogadaUm },
-  { link: '/logada-2', name: 'Logada Dois', component: LogadaDois },
+  { link: '/cadastro', name: 'cadastro', component: Cadastro },
 ]
 
 publicRoutes.forEach(r => r.isSafe = false)

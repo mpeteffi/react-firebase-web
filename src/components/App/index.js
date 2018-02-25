@@ -7,6 +7,8 @@ import routes from '../../constants/routes'
 import Header from './Header'
 import Home from '../pages/Home'
 
+import './app.css'
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -30,15 +32,17 @@ class App extends Component {
       <main>
         <Reboot />
         <Header authUser={ this.state.authUser } />
-        <Switch>
-          {
-            routes.map(r => r.isSafe
-              ? <PrivateRoute key={ r.link } exact path={ r.link } component={ r.component } />
-              : <Route key={ r.link } exact path={ r.link } component={ r.component } />
-            )
-          }
-          <Route component={Home} />
-        </Switch>
+        <div className='App__container'>
+          <Switch>
+            {
+              routes.map(r => r.isSafe
+                ? <PrivateRoute key={ r.link } exact path={ r.link } component={ r.component } />
+                : <Route key={ r.link } exact path={ r.link } component={ r.component } />
+              )
+            }
+            <Route component={Home} />
+          </Switch>
+        </div>
       </main>
     )
   }

@@ -1,0 +1,35 @@
+.imovelEditCard__card {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.imovelEditCard__card__image {
+  min-width: 155px;
+  height: 155px;
+  float: left;
+  flex-basis: auto;
+}
+
+.imovelEditCard__card__content {
+  flex-grow: 1;
+}
+
+.imovelEditCard__card__content__row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.imovelEditCard__card__content__row--group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.imovelEditCard__card__content__row .textField {
+  padding-right: 10px;
+  flex-grow: 1;
+}

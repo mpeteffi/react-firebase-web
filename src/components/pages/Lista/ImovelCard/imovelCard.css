@@ -1,0 +1,20 @@
+.imovelCard__card {
+  max-width: 345px;
+}
+
+.imovelCard__card__image {
+  height: 200px;
+}
+
+.imovelCard__card__header {
+  margin-bottom: 10px;
+}
+
+.imovelCard__card__titulo {
+  display: inline !important;
+}
+
+.imovelCard__card__subTitulo {
+  display: inline !important;
+  margin-left: 8px !important;
+}
