@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import { Button, TextField, Dialog } from 'material-ui'
+import AccountIcon from 'mdi-react/AccountIcon'
+import CloseIcon from 'mdi-react/CloseIcon'
 import { DialogActions, DialogContent, DialogContentText, DialogTitle } from 'material-ui/Dialog'
 import loginService from '../../../../services/loginService'
+
+import './login.css'
 
 class Login extends Component {
   constructor(props) {
@@ -61,14 +65,14 @@ class Login extends Component {
     const logoutButton = (
       <div>
         <Button color='inherit' onClick={ () => loginService.signOut() }>
-          { 'Deslogar' }
+          <CloseIcon className='login__icon' /> { 'Deslogar' }
         </Button>
       </div>
     )
     const loginButton = (
       <div>
         <Button color='inherit' onClick={ this.toggle }>
-          { 'Login' }
+          <AccountIcon className='login__icon' /> { 'Login' }
         </Button>
         <Dialog
           open={ this.state.openDialog }
