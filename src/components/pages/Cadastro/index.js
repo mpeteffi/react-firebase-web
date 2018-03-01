@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import imovelService from '../../../services/imovelService'
+import imovelService from 'services/imovelService'
 
+import Imovel from 'pojos/Imovel'
 import ImovelEditCard from './ImovelEditCard'
 
 class Cadastro extends Component {
@@ -13,7 +14,7 @@ class Cadastro extends Component {
 
   async getImoveis() {
     const imoveis = await imovelService.getAll()
-    this.setState({ imoveis })
+    this.setState({ imoveis: imoveis.map(i => new Imovel(i)) })
   }
 
   render() {

@@ -33,3 +33,27 @@
   padding-right: 10px;
   flex-grow: 1;
 }
+
+.imovelEditCard__icon {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.mdi-icon {
+  margin: 0 5px;
+}
+
+.edit--color:hover {
+  fill: #2196F3;
+}
+
+.cancel--color:hover {
+  fill: #F44336;
+}
+
+.check--color:hover {
+  fill: #4CAF50;
+}

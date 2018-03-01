@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import Reboot from 'material-ui/Reboot'
-import firebase from '../../config/firebase'
-import routes from '../../constants/routes'
+import firebase from 'config/firebase'
+import routes from 'constants/routes'
 
 import Header from './Header'
-import Home from '../pages/Home'
+import Home from 'components/pages/Home'
 
 import './app.css'
 

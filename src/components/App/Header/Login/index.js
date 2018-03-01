@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { Button, TextField, Dialog } from 'material-ui'
-import AccountIcon from 'mdi-react/AccountIcon'
-import CloseIcon from 'mdi-react/CloseIcon'
 import { DialogActions, DialogContent, DialogContentText, DialogTitle } from 'material-ui/Dialog'
-import loginService from '../../../../services/loginService'
+import loginService from 'services/loginService'
+
+import CloseIcon from 'mdi-react/CloseIcon'
+import AccountIcon from 'mdi-react/AccountIcon'
 
 import './login.css'
 

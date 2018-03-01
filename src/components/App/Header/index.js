@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { AppBar, Toolbar, Typography, Button } from 'material-ui'
-import routes from '../../../constants/routes'
+import routes from 'constants/routes'
 
 import Login from './Login'
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import imovelService from '../../../services/imovelService'
+import imovelService from 'services/imovelService'
 
 import ImovelCard from './ImovelCard'
 

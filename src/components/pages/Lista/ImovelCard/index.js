@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Typography } from 'material-ui'
 import { CardContent, CardMedia } from 'material-ui/Card'
-import defaultImage from '../../../../assets/default-image.jpg'
+import defaultImage from 'assets/default-image.jpg'
 
 import './imovelCard.css'
 
